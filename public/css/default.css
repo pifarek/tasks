@@ -1,0 +1,80 @@
+section {
+    padding: 40px 0;
+}
+a[disabled] {
+    cursor: default;
+}
+/*
+* === Tasks List ===
+*/
+section.section-tasks h3 {
+    margin-bottom: 20px;
+}
+section.section-tasks .nav-tabs {
+    margin-bottom: 30px;
+}
+section.section-tasks ul.tasks-list,
+section.section-tasks ul.tasks-list > li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section.section-tasks ul.tasks-list > li {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+section.section-tasks .task-icon {
+    text-align: center;
+    font-size: 30px;
+}
+section.section-tasks .task-icon a {
+    color: #dbdbdb;
+    line-height: 30px;
+}
+section.section-tasks li .status-pending {
+     display: block;
+}
+section.section-tasks li .status-completed {
+    display: none;
+}
+section.section-tasks li.task-completed .status-completed {
+    display: block;
+}
+section.section-tasks li.task-completed .status-pending {
+    display: none;
+}
+section.section-tasks li.task-completed .task-icon a {
+    color: #17a400;
+}
+section.section-tasks li.task-completed p {
+    text-decoration: line-through;
+    color: #6d6d6d;
+}
+section.section-tasks ol.task-details,
+section.section-tasks ol.task-details li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+section.section-tasks ol.task-details li {
+    display: inline;
+    margin-right: 10px;
+}
+section.section-tasks ol.task-details li:last-child {
+    margin: 0;
+}
+section.section-tasks ol.task-details {
+
+    font-size: 11px;
+    color: #3f3f3f;
+}
+section.section-tasks ol.task-details .badge {
+    font-size: 11px;
+}
+/*
+* === Creating Task ===
+*/
+section.section-create-task .form-group {
+    position: relative;
+}

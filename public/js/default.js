@@ -36,6 +36,7 @@
         $.getJSON(settings.base_url + '/tasks/delete/' + id, function(response) {
             if(response.status === 'ok') {
                 $('li[data-id="' + id + '"]').fadeOut(200, function() {
+                    $(this).remove();
                     if(!$('li.task:visible').length) {
                         $('.alert-warning').removeClass('d-none');
                     }
